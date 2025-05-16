@@ -1,4 +1,3 @@
-
 import { ArrowRight, Linkedin, Twitter, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -73,26 +72,28 @@ const Footer = () => {
             <div className="mb-6 flex flex-col">
               <img 
                 src="/lovable-uploads/7d120ee6-3614-4b75-9c35-716d54490d67.png" 
-                alt="WRLDS Technologies Logo" 
+                alt="Druk Textiles Logo" 
                 className="h-10 w-auto mb-4 invert" // Added invert to make logo white
               />
-              <p className="text-sm text-gray-400 uppercase tracking-wide">Engineering the future, one fiber at a time</p>
+              <p className="text-sm text-gray-400 uppercase tracking-wide">Where traditional wisdom meets modern innovation</p>
             </div>
             <p className="text-gray-400 mb-6">
-              WRLDS Technologies provides an end-to-end platform for the creation and deployment of AI-powered smart textile sensors, transforming ordinary fabrics into data-driven interfaces that enhance performance, safety, and quality of life.
+              Druk Textiles provides an end-to-end platform for the creation and deployment of AI-powered smart textile sensors, 
+              inspired by Bhutan's heritage and designed for the modern world, transforming ordinary fabrics into data-driven 
+              interfaces that enhance performance, safety, and quality of life.
             </p>
             <div className="flex flex-col space-y-3 text-gray-400">
               <div className="flex items-center">
                 <MapPin size={16} className="mr-2 flex-shrink-0" />
-                <span>Hornsgatan 110, 117 26, Stockholm Sweden</span>
+                <span>Norzin Lam, Thimphu 11001, Bhutan</span>
               </div>
               <div className="flex items-center">
                 <Mail size={16} className="mr-2 flex-shrink-0" />
-                <a href="mailto:info@wrldstechnologies.com" className="hover:text-white transition-colors">info@wrldstechnologies.com</a>
+                <a href="mailto:info@druktextiles.com" className="hover:text-white transition-colors">info@druktextiles.com</a>
               </div>
               <div className="flex items-center">
                 <Phone size={16} className="mr-2 flex-shrink-0" />
-                <a href="tel:+46123456789" className="hover:text-white transition-colors">+46 12 345 67 89</a>
+                <a href="tel:+97517101234" className="hover:text-white transition-colors">+975 17101234</a>
               </div>
             </div>
           </div>
@@ -169,7 +170,7 @@ const Footer = () => {
         
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} WRLDS Technologies. All rights reserved.
+            © {new Date().getFullYear()} Druk Textiles. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link to="/privacy-policy" className="text-sm text-gray-500 hover:text-white transition-colors">Privacy Policy</Link>

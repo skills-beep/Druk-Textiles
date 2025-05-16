@@ -4,41 +4,39 @@ import { Mail, Linkedin, Phone } from 'lucide-react';
 
 const ContactInfo = () => {
   return (
-    <section id="contact-info" className="bg-gradient-to-b from-white to-black text-white relative py-[15px] md:py-[25px]">
+    <section id="contact-info" className="bg-gradient-to-b from-white dark:from-gray-900 to-black dark:to-black text-white relative py-[15px] md:py-[25px] transition-colors duration-300">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 md:mb-16">
-          <div className="inline-block mb-3 px-3 py-1 bg-white text-black rounded-full text-sm font-medium">
+          <div className="inline-block mb-3 px-3 py-1 bg-white dark:bg-gray-800 text-black dark:text-white rounded-full text-sm font-medium">
             Get In Touch
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">
             Contact Us Today
           </h2>
-          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-700 dark:text-gray-300 text-lg max-w-2xl mx-auto">
             Have questions about our AI-powered sensor solutions? Reach out to our team and let's discuss how we can help bring your ideas to life.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Felix's Contact Info */}
-          <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-700">
+          {/* Bishal's Contact Info */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 md:p-8 border border-gray-700 dark:border-gray-600">
             <div className="flex flex-col items-center text-center">
-              <img 
-                src="/lovable-uploads/aa5291bd-2417-4c1e-9a02-0bcc71a92507.png"
-                alt="Felix von Heland"
-                className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
-              />
-              <h3 className="text-xl font-bold text-gray-900">Felix von Heland</h3>
-              <p className="text-gray-600 mb-4">CEO and Founder</p>
+              <div className="w-32 h-32 rounded-full mb-4 overflow-hidden bg-gradient-to-r from-blue-500 to-teal-500 flex items-center justify-center text-4xl font-bold text-white">
+                BS
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Bishal Sharma</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">Founder & CEO</p>
               <div className="flex flex-col space-y-3">
-                <a href="mailto:felix@wrlds.com" className="flex items-center text-gray-700 hover:text-blue-600">
+                <a href="mailto:bishal@druktextiles.com" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
                   <Mail className="w-5 h-5 mr-2" />
-                  felix@wrlds.com
+                  bishal@druktextiles.com
                 </a>
                 <a 
-                  href="https://www.linkedin.com/in/felixvonheland/" 
+                  href="https://www.linkedin.com/in/bishal-sharma-12b7211b6/" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center text-gray-700 hover:text-blue-600"
+                  className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                 >
                   <Linkedin className="w-5 h-5 mr-2" />
                   LinkedIn Profile
@@ -47,33 +45,22 @@ const ContactInfo = () => {
             </div>
           </div>
 
-          {/* Love's Contact Info */}
-          <div className="bg-white rounded-xl shadow-xl p-6 md:p-8 border border-gray-700">
+          {/* Dorji's Contact Info */}
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 md:p-8 border border-gray-700 dark:border-gray-600">
             <div className="flex flex-col items-center text-center">
-              <img 
-                src="/lovable-uploads/a9bb9110-964a-43b0-a5ab-7162140cd133.png"
-                alt="Love Anderberg"
-                className="w-32 h-32 rounded-full mb-4 object-cover filter grayscale"
-              />
-              <h3 className="text-xl font-bold text-gray-900">Love Anderberg</h3>
-              <p className="text-gray-600 mb-4">COO</p>
+              <div className="w-32 h-32 rounded-full mb-4 overflow-hidden bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-4xl font-bold text-white">
+                TD
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Tenzin Dorji</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">COO</p>
               <div className="flex flex-col space-y-3">
-                <a href="mailto:love@wrlds.com" className="flex items-center text-gray-700 hover:text-blue-600">
+                <a href="mailto:tenzin@druktextiles.com" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
                   <Mail className="w-5 h-5 mr-2" />
-                  love@wrlds.com
+                  tenzin@druktextiles.com
                 </a>
-                <a 
-                  href="https://www.linkedin.com/in/love-anderberg-67549a174/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-gray-700 hover:text-blue-600"
-                >
-                  <Linkedin className="w-5 h-5 mr-2" />
-                  LinkedIn Profile
-                </a>
-                <a href="tel:+46760149508" className="flex items-center text-gray-700 hover:text-blue-600">
+                <a href="tel:+97517101234" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
                   <Phone className="w-5 h-5 mr-2" />
-                  076-014 95 08
+                  +975 17101234
                 </a>
               </div>
             </div>

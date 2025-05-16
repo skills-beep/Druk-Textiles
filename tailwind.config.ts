@@ -63,6 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
+				bhutan: {
+					yellow: '#FFCC33',
+					orange: '#FF6600',
+					red: '#FF0033',
+					blue: '#0000CC',
+					indigo: '#330066',
+				},
 				wrlds: {
 					teal: '#9F9EA1',
 					dark: '#3F3F3F',

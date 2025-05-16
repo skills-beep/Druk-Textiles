@@ -19,35 +19,38 @@ import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Blog from "./pages/Blog";
 import BlogPostDetail from "./pages/BlogPostDetail";
+import { ThemeProvider } from "./contexts/ThemeContext";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/projects/firecat" element={<FireCatProject />} />
-            <Route path="/projects/sport-retail" element={<SportRetailProject />} />
-            <Route path="/projects/workwear" element={<WorkwearProject />} />
-            <Route path="/projects/hockey" element={<HockeyProject />} />
-            <Route path="/projects/pet-tracker" element={<PetProject />} />
-            <Route path="/tech-details" element={<TechDetails />} />
-            <Route path="/development-process" element={<DevelopmentProcess />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPostDetail />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+    <ThemeProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/projects/firecat" element={<FireCatProject />} />
+              <Route path="/projects/sport-retail" element={<SportRetailProject />} />
+              <Route path="/projects/workwear" element={<WorkwearProject />} />
+              <Route path="/projects/hockey" element={<HockeyProject />} />
+              <Route path="/projects/pet-tracker" element={<PetProject />} />
+              <Route path="/tech-details" element={<TechDetails />} />
+              <Route path="/development-process" element={<DevelopmentProcess />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPostDetail />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </ThemeProvider>
   );
 };
 
