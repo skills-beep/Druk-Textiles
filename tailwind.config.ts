@@ -70,6 +70,13 @@ export default {
 					blue: '#0000CC',
 					indigo: '#330066',
 				},
+				druk: {
+					primary: '#FF6600',
+					secondary: '#0000CC',
+					accent: '#FFCC33',
+					dark: '#330066',
+					light: '#FFF9E6',
+				},
 				wrlds: {
 					teal: '#9F9EA1',
 					dark: '#3F3F3F',
@@ -122,6 +129,11 @@ export default {
 				'shimmer': {
 					'0%': { backgroundPosition: '-200% 0' },
 					'100%': { backgroundPosition: '200% 0' }
+				},
+				'flow': {
+					'0%': { transform: 'translateX(0) translateY(0)' },
+					'50%': { transform: 'translateX(5px) translateY(-5px)' },
+					'100%': { transform: 'translateX(0) translateY(0)' }
 				}
 			},
 			animation: {
@@ -133,7 +145,8 @@ export default {
 				'scale-in-out': 'scale-in-out 3s ease-in-out infinite',
 				'rotate-slow': 'rotate-slow 20s linear infinite',
 				'bounce-subtle': 'bounce-subtle 2s ease-in-out infinite',
-				'shimmer': 'shimmer 3s linear infinite'
+				'shimmer': 'shimmer 3s linear infinite',
+				'flow': 'flow 8s ease-in-out infinite'
 			}
 		}
 	},
