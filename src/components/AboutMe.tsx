@@ -1,5 +1,5 @@
 
-import { GitHub, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 
 const AboutMe = () => {
@@ -46,7 +46,7 @@ const AboutMe = () => {
                 rel="noopener noreferrer" 
                 className="flex items-center bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors"
               >
-                <GitHub className="mr-2 h-5 w-5" />
+                <Github className="mr-2 h-5 w-5" />
                 GitHub
               </a>
               <a 
